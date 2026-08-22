@@ -1,0 +1,436 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Erijesu —Frontend Developer</title>
+    <meta
+      name="description"
+      content="Erijesu is a frontend developer specializing in modern CSS, HTML, JavaScript and React. View his projects and get in touch."
+    />
+    <meta property="og:title" content="Erijesu — Frontend Developer" />
+    <meta
+      property="og:description"
+      content="Frontend developer specializing in modern CSS, HTML, JavaScript and React."
+    />
+    <meta property="og:type" content="website" />
+    <link rel="icon" href="images/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="nav">
+      <div class="nav__inner">
+        <a href="#top" class="nav__brand"
+          >Erijesu<span class="nav__dot">.</span></a
+        >
+        <button
+          class="nav-toggle"
+          aria-expanded="false"
+          aria-controls="nav-links"
+          aria-label="Toggle navigation menu"
+        >
+          <span></span><span></span><span></span>
+        </button>
+        <nav id="nav-links" class="nav__links">
+          <a href="https://github.com/Erijesu0" target="_blank" rel="noopener"
+            >GitHub</a
+          >
+          <a
+            href="https://www.linkedin.com/in/toluwani-erijesu"
+            target="_blank"
+            rel="noopener"
+            >LinkedIn</a
+          >
+          <a href="#contact">Contact me</a>
+          <a href="#contact" class="btn btn--solid nav__cta">Get in Touch</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="top">
+        <div class="hero__pattern" aria-hidden="true">
+          <div class="blob blob--a"></div>
+          <div class="blob blob--b"></div>
+          <div class="blob blob--c"></div>
+          <svg
+            class="hero__lines"
+            viewBox="0 0 1200 700"
+            xmlns="http://www.w3.org/2000/svg"
+            preserveAspectRatio="none"
+          >
+            <path
+              class="flow-line flow-line--1"
+              d="M-100,180 C 250,80 450,280 800,160 S 1250,220 1400,120"
+              fill="none"
+              stroke="#397BFB"
+              stroke-width="1.5"
+              opacity="0.35"
+            />
+            <path
+              class="flow-line flow-line--2"
+              d="M-100,420 C 200,520 500,340 850,480 S 1250,460 1400,540"
+              fill="none"
+              stroke="#B3E0FF"
+              stroke-width="1.5"
+              opacity="0.25"
+            />
+            <path
+              class="flow-line flow-line--3"
+              d="M-100,560 C 300,600 600,500 900,600 S 1200,640 1400,580"
+              fill="none"
+              stroke="#397BFB"
+              stroke-width="1"
+              opacity="0.2"
+            />
+          </svg>
+        </div>
+        <div class="wrap hero__content">
+          <p class="eyebrow">Frontend Dev</p>
+          <h1 class="hero__name">Hello, I'm Erijesu</h1>
+          <p class="hero__sub">
+            I design interfaces and I build them to work with modern CSS, HTML,
+            JavaScript and React.
+          </p>
+          <div class="hero__actions">
+            <a href="#contact" class="btn btn--solid">Get In Touch</a>
+            <a href="#projects" class="btn btn--ghost">View Projects</a>
+            <a href="resume.pdf" class="btn btn--ghost" download>Download CV</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="projects">
+        <div class="wrap">
+          <div class="section-head">
+            <p class="eyebrow">Recent Work</p>
+            <h2>Selected Projects</h2>
+            <p class="section-head__sub">
+              Three projects, three different problems — a team capstone, a solo
+              landing page, and a client build.
+            </p>
+          </div>
+
+          <div class="projects__grid">
+            <article class="project-card">
+              <a
+                class="project-card__stretched"
+                href="https://capstone-project-grp15.netlify.app/"
+                target="_blank"
+                rel="noopener"
+                aria-label="View Solar System Explorer project"
+              ></a>
+              <div class="project-card__media">
+                <img
+                  src="images/solar-project.webp"
+                  alt="Solar System Explorer project screenshot"
+                  loading="lazy"
+                />
+              </div>
+              <div class="project-card__body">
+                <p class="project-card__index">(01)</p>
+                <p class="project-card__tag">
+                  Frontend Lead — TS Academy Capstone
+                </p>
+                <h3 class="project-card__title">Solar System Explorer</h3>
+                <p class="project-card__desc">
+                  A data-driven React + Vite web app exploring the solar system,
+                  built as the Group 15 capstone for the Phoenix Cohort.
+                </p>
+                <ul class="project-card__list">
+                  <li>
+                    Led frontend coordination for the team, architecting a
+                    shared component structure (Header, Hero, PlanetGrid,
+                    VideoSection, Table, ContactForm, Footer)
+                  </li>
+                  <li>
+                    Coordinated GitHub collaboration — branches, PRs, reviews
+                  </li>
+                  <li>Fetched and rendered live data via API calls</li>
+                  <li>Fully responsive across mobile, tablet &amp; desktop</li>
+                </ul>
+                <div class="project-card__problems">
+                  <p>
+                    <strong>Challenge —</strong> Getting the team aligned on Git
+                    collaboration was the first hurdle. We settled on a
+                    feature-branch + pull-request flow that kept the main branch
+                    clean.
+                  </p>
+                  <p>
+                    <strong>Challenge —</strong> The build passed for every
+                    teammate but failed on Netlify — a case-sensitivity mismatch
+                    between Windows and Linux file systems. Traced it and fixed
+                    it with a Git cache reset.
+                  </p>
+                </div>
+                <span class="project-card__cta"
+                  >View Project <span aria-hidden="true">↗</span></span
+                >
+              </div>
+            </article>
+
+            <article class="project-card">
+              <a
+                class="project-card__stretched"
+                href="https://rettyfoodhouse.netlify.app/"
+                target="_blank"
+                rel="noopener"
+                aria-label="View Retty Foodhouse project"
+              ></a>
+              <div class="project-card__media">
+                <img
+                  src="images/retty-project.webp"
+                  alt="Retty Foodhouse project screenshot"
+                  loading="lazy"
+                />
+              </div>
+              <div class="project-card__body">
+                <p class="project-card__index">(02)</p>
+                <p class="project-card__tag">Personal Project</p>
+                <h3 class="project-card__title">Retty Foodhouse</h3>
+                <p class="project-card__desc">
+                  A responsive landing page for a healthy meal-subscription
+                  startup — hero, pricing, testimonials, and sign-up, built
+                  solo.
+                </p>
+                <ul class="project-card__list">
+                  <li>
+                    Built every section solo: hero, pricing, testimonials,
+                    sign-up
+                  </li>
+                  <li>
+                    Structured reusable card components for pricing &amp;
+                    testimonials
+                  </li>
+                  <li>Fully responsive across mobile, tablet &amp; desktop</li>
+                </ul>
+                <div class="project-card__problems">
+                  <p>
+                    <strong>Challenge —</strong> Image-heavy sections were
+                    slowing load time on mobile. Compressed and resized images
+                    to bring it back down.
+                  </p>
+                  <p>
+                    <strong>Challenge —</strong> Pricing and testimonial grids
+                    kept breaking at odd screen widths. Rebuilt the layout with
+                    CSS Grid/Flexbox breakpoints instead of fixed widths.
+                  </p>
+                </div>
+                <span class="project-card__cta"
+                  >View Project <span aria-hidden="true">↗</span></span
+                >
+              </div>
+            </article>
+
+            <article class="project-card">
+              <a
+                class="project-card__stretched"
+                href="https://arewa-okurin.netlify.app/"
+                target="_blank"
+                rel="noopener"
+                aria-label="View Arewa Okunrin project"
+              ></a>
+              <div class="project-card__media">
+                <img
+                  src="images/arewa-project.webp"
+                  alt="Arewa Okunrin project screenshot"
+                  loading="lazy"
+                />
+              </div>
+              <div class="project-card__body">
+                <p class="project-card__index">(03)</p>
+                <p class="project-card__tag">Personal Project</p>
+                <h3 class="project-card__title">Arewa Okunrin</h3>
+                <p class="project-card__desc">
+                  A fully responsive e-commerce storefront for a menswear brand
+                  rooted in Yoruba heritage — built solo, front to back, with an
+                  editorial black-and-gold visual system.
+                </p>
+                <ul class="project-card__list">
+                  <li>
+                    Product grids, a pricing section, and a functional hamburger
+                    nav
+                  </li>
+                  <li>Cart that persists across page refreshes</li>
+                  <li>Fully responsive across mobile, tablet &amp; desktop</li>
+                </ul>
+                <div class="project-card__problems">
+                  <p>
+                    <strong>Challenge —</strong> A cart built on page state
+                    alone reset on every refresh. Moved it to localStorage so it
+                    survives reloads and tab closes.
+                  </p>
+                  <p>
+                    <strong>Challenge —</strong> Product images were the biggest
+                    hit to load time. Working through compression now —
+                    Lighthouse score already up from 33 to 43.
+                  </p>
+                </div>
+                <span class="project-card__cta"
+                  >View Project <span aria-hidden="true">↗</span></span
+                >
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section contact" id="contact">
+        <div class="wrap">
+          <div class="section-head">
+            <p class="eyebrow">Get in Touch</p>
+            <h2>Let's build something</h2>
+            <p class="section-head__sub">
+              Open to frontend roles, internships, and freelance work. Reach out
+              any time.
+            </p>
+          </div>
+
+          <div class="contact__grid">
+            <div class="contact__info">
+              <div class="contact__block">
+                <p class="contact__label">By Email</p>
+                <a
+                  class="contact__value"
+                  href="mailto:toluwanierijesu@gmail.com"
+                  >toluwanierijesu@gmail.com</a
+                >
+              </div>
+              <div class="contact__block">
+                <p class="contact__label">By Phone</p>
+                <a class="contact__value" href="tel:09128453751"
+                  >0912 845 3751</a
+                >
+                <a class="contact__value" href="tel:08159978249"
+                  >0815 997 8249</a
+                >
+              </div>
+              <div class="contact__block">
+                <p class="contact__label">Elsewhere</p>
+                <a
+                  class="contact__value"
+                  href="https://github.com/Erijesu0"
+                  target="_blank"
+                  rel="noopener"
+                  >GitHub ↗</a
+                >
+                <a
+                  class="contact__value"
+                  href="https://www.linkedin.com/in/toluwani-erijesu"
+                  target="_blank"
+                  rel="noopener"
+                  >LinkedIn ↗</a
+                >
+              </div>
+            </div>
+
+            <div class="contact__form-card">
+              <form
+                name="contact"
+                method="POST"
+                action="/"
+                data-netlify="true"
+                netlify
+                netlify-honeypot="bot-field"
+                id="contact-form"
+              >
+                <input type="hidden" name="form-name" value="contact" />
+                <p class="hp-field">
+                  <label
+                    >Don't fill this out if you're human:
+                    <input name="bot-field"
+                  /></label>
+                </p>
+                <div class="form-row">
+                  <div class="form-field">
+                    <label for="firstName"
+                      >First Name <span aria-hidden="true">*</span></label
+                    >
+                    <input
+                      type="text"
+                      id="firstName"
+                      name="firstName"
+                      required
+                      placeholder="First name here"
+                    />
+                  </div>
+                  <div class="form-field">
+                    <label for="lastName"
+                      >Last Name <span aria-hidden="true">*</span></label
+                    >
+                    <input
+                      type="text"
+                      id="lastName"
+                      name="lastName"
+                      required
+                      placeholder="Last name here"
+                    />
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-field">
+                    <label for="email"
+                      >Email Address <span aria-hidden="true">*</span></label
+                    >
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      required
+                      placeholder="Add email"
+                    />
+                  </div>
+                  <div class="form-field">
+                    <label for="subject"
+                      >Subject <span aria-hidden="true">*</span></label
+                    >
+                    <input
+                      type="text"
+                      id="subject"
+                      name="subject"
+                      required
+                      placeholder="How can I help?"
+                    />
+                  </div>
+                </div>
+                <div class="form-field">
+                  <label for="message"
+                    >Your Message <span aria-hidden="true">*</span></label
+                  >
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows="5"
+                    required
+                    placeholder="Your message"
+                  ></textarea>
+                </div>
+                <button type="submit" class="btn btn--solid form-submit">
+                  Send Message
+                </button>
+                <p class="form-status" id="form-status" role="status"></p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap site-footer__inner">
+        <p>© <span id="year"></span> Toluwani Erijesu Daniel</p>
+        <p>Built with HTML, CSS &amp; JavaScript</p>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
