@@ -1,7 +1,5 @@
-<<<<<<< HEAD
-# Erijesu-Portfolio
-My first portfolio
 =======
+
 # Erijesu — Frontend Developer Portfolio
 
 A single-page portfolio built with plain HTML, CSS, and JavaScript. No build step, no framework, no dependencies — open `index.html` in a browser and it works.
@@ -31,12 +29,12 @@ Everything is plain text — open the `portfolio` folder in VS Code and edit dir
 - **Text content** (name, bio, project descriptions, contact info) — edit `index.html` directly. It's all readable HTML, no templating.
 - **Colors, fonts, spacing** — edit `css/style.css`. The color palette is defined once at the top as CSS variables:
   ```css
-  :root{
-    --bg:#000000;        /* page background */
-    --accent:#397BFB;    /* primary blue — buttons, links, highlights */
-    --accent-pale:#B3E0FF;
-    --white:#FFFFFF;
-    --gray:#B3B3B3;      /* secondary text */
+  :root {
+    --bg: #000000; /* page background */
+    --accent: #397bfb; /* primary blue — buttons, links, highlights */
+    --accent-pale: #b3e0ff;
+    --white: #ffffff;
+    --gray: #b3b3b3; /* secondary text */
   }
   ```
   Change these values and the whole site updates.
@@ -47,6 +45,7 @@ Everything is plain text — open the `portfolio` folder in VS Code and edit dir
 The contact form is wired for **Netlify Forms** — no backend code needed, but it only works after this site is deployed on Netlify. Netlify scans your HTML at deploy time for the `data-netlify="true"` attribute on the `<form>` and automatically creates a matching endpoint.
 
 Once deployed:
+
 - Submissions show up in your Netlify dashboard under **Site → Forms**.
 - You can turn on **email notifications** in that same dashboard (Forms → Settings → Form notifications) so submissions land in your inbox — this isn't automatic and needs to be switched on manually.
 - The hidden `bot-field` input is a honeypot for spam — leave it as is.
@@ -56,11 +55,13 @@ If you open `index.html` locally (not deployed) and submit the form, you'll see 
 ## Deploying to Netlify
 
 **Fastest way (no git):**
+
 1. Go to [app.netlify.com/drop](https://app.netlify.com/drop)
 2. Drag the whole `portfolio` folder onto the page
 3. Netlify gives you a live URL immediately, and detects the contact form automatically
 
 **With git (recommended if you'll keep editing):**
+
 1. Push this folder to a GitHub repo
 2. In Netlify: **Add new site → Import an existing project** → connect the repo
 3. Leave the build command empty and set the publish directory to `/` (the root) — there's no build step
@@ -69,10 +70,11 @@ If you open `index.html` locally (not deployed) and submit the form, you'll see 
 ## Known placeholders / things to double check
 
 - The "Challenge" bullets under each project are my best guess at real problems you'd have hit — confirm or rewrite them before an interview, since a recruiter may ask you to elaborate.
-- **The "Download CV" button points to `resume.pdf`, which doesn't exist yet.** Drop your actual résumé PDF into the `portfolio` folder (same level as `index.html`) and name it exactly `resume.pdf` — the button will work as soon as that file is there and the site is redeployed. If you'd rather name it something else, update the `href="resume.pdf"` in the hero section of `index.html` to match.
+- \*\*The "Download CV" button points to `resume.pdf`. Drop your actual résumé PDF into the `portfolio` folder (same level as `index.html`) and name it exactly `resume.pdf` the button will work as soon as that file is there and the site is redeployed. If you'd rather name it something else, update the `href="resume.pdf"` in the hero section of `index.html` to match.
 - Phone numbers are linked as `tel:09128453751` (local format). If you want international dialing to work from any country, switch to `tel:+2349128453751` format.
 
 ## License
 
 MIT — see `LICENSE`. You're free to reuse, modify, and deploy this however you like.
->>>>>>> 753cf7c (Initial commit)
+
+live deployment:https://toluwanierijesu.netlify.app/
